@@ -1,0 +1,18 @@
+* The Sol.java contains the main method needed to run the simulation
+* The Particle.java contains numerous methods such as Eulers, Cramers and Verlat that are used to create a particle and gauge the movements of a particle
+* The Gravity.java contains newtons law of gravitation, and finds the total acceleration of a planet due to othe planets in the system. 
+* The PhysicsVector.java contains the constrcutor that creates 3 dimensional vectors that is used throughout the other java files.
+
+* To run the program, open command prompt/terminal application and locate the directory of the 4 files using cd 'directory'.
+* Compile Sol.java by typing "javac Sol.java" into cmd.
+* Run SolarSystemSim by typing "java Sol" into cmd.
+* Choose your method of choice, by entering 1,2 or 3 into cmd
+* Enter a timestep of which youd like the methods to use (The smaller the number the more accurate the simulation will be, however it will take longer)
+* Enter a time period you wish to simulate the solar system for, the similar starts on the 6th of Decemeber 2017 at 00:00. ( The larger the inputted value,
+* the longer the simulation will take)
+
+* To add another object,use the format Particle 'Planet name' = new Particle(x position, y position, z position, x velocity, y velocity, z velocity, 
+  Mass Of planet, "Name of Planet"). The planets position and velocity should relate to the 6th of december 2017 at 00:00. (Lines 22- 35)
+* Next add the name of the particle to the Planets array found on line 35
+
+* To change what planet is passed to the Text file, change the value of Planet[x] on lines 89,and 129.
